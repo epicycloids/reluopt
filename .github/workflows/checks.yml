@@ -1,0 +1,37 @@
+name: Checks
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        python: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
+      - name: Install
+        run: uv sync --locked --extra dev --python ${{ matrix.python }}
+      - name: Test
+        run: |
+          uv run python -m pytest tests
+          uv run python -m tests.test_data_engine
+      - name: Build and check distributions
+        run: |
+          uv run python -m build
+          uv run python -m twine check dist/*
+      - name: Test wheel installation
+        run: |
+          uv venv wheel-check --python ${{ matrix.python }}
+          uv pip install --python wheel-check/bin/python dist/*.whl
+          cd /tmp
+          "$GITHUB_WORKSPACE/wheel-check/bin/python" -c 'import reluopt; print(reluopt.solve_rcg)'

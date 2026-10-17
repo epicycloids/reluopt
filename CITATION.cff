@@ -1,0 +1,203 @@
+cff-version: 1.2.0
+message: "Citation metadata for this software."
+title: "reluopt"
+type: software
+authors:
+  - family-names: "Bell"
+    given-names: "Logan"
+version: 0.6.0
+license: MIT
+repository-code: "https://github.com/epicycloids/reluopt"
+references:
+  - type: conference-paper
+    title: "Convex Neural Networks"
+    authors:
+      - family-names: "Bengio"
+        given-names: "Yoshua"
+      - family-names: "Le Roux"
+        given-names: "Nicolas"
+      - family-names: "Vincent"
+        given-names: "Pascal"
+      - family-names: "Delalleau"
+        given-names: "Olivier"
+      - family-names: "Marcotte"
+        given-names: "Patrice"
+    collection-title: "Advances in Neural Information Processing Systems"
+    volume: "18"
+    year: 2005
+    url: "https://papers.neurips.cc/paper_files/paper/2005/hash/0fc170ecbb8ff1afb2c6de48ea5343e7-Abstract.html"
+  - type: article
+    title: "Breaking the Curse of Dimensionality with Convex Neural Networks"
+    authors:
+      - family-names: "Bach"
+        given-names: "Francis"
+    journal: "Journal of Machine Learning Research"
+    volume: "18"
+    issue: "19"
+    start: "1"
+    end: "53"
+    year: 2017
+    url: "https://jmlr.org/papers/v18/14-546.html"
+  - type: article
+    title: "The Alternating Descent Conditional Gradient Method for Sparse Inverse Problems"
+    authors:
+      - family-names: "Boyd"
+        given-names: "Nicholas"
+      - family-names: "Schiebinger"
+        given-names: "Geoffrey"
+      - family-names: "Recht"
+        given-names: "Benjamin"
+    journal: "SIAM Journal on Optimization"
+    volume: "27"
+    issue: "2"
+    start: "616"
+    end: "639"
+    year: 2017
+    doi: "10.1137/15M1035793"
+    url: "https://epubs.siam.org/doi/10.1137/15M1035793"
+  - type: conference-paper
+    title: "Neural Networks are Convex Regularizers: Exact Polynomial-time Convex Optimization Formulations for Two-layer Networks"
+    authors:
+      - family-names: "Pilanci"
+        given-names: "Mert"
+      - family-names: "Ergen"
+        given-names: "Tolga"
+    collection-title: "Proceedings of Machine Learning Research"
+    volume: "119"
+    start: "7695"
+    end: "7705"
+    year: 2020
+    url: "https://proceedings.mlr.press/v119/pilanci20a.html"
+  - type: conference-paper
+    title: "Fast Convex Optimization for Two-Layer ReLU Networks: Equivalent Model Classes and Cone Decompositions"
+    authors:
+      - family-names: "Mishkin"
+        given-names: "Aaron"
+      - family-names: "Sahiner"
+        given-names: "Arda"
+      - family-names: "Pilanci"
+        given-names: "Mert"
+    collection-title: "Proceedings of Machine Learning Research"
+    volume: "162"
+    start: "15770"
+    end: "15816"
+    year: 2022
+    url: "https://proceedings.mlr.press/v162/mishkin22a.html"
+  - type: article
+    title: "Semidefinite relaxation and nonconvex quadratic optimization"
+    authors:
+      - family-names: "Nesterov"
+        given-names: "Yu."
+    journal: "Optimization Methods and Software"
+    volume: "9"
+    issue: "1-3"
+    start: "141"
+    end: "160"
+    year: 1998
+    doi: "10.1080/10556789808805690"
+    url: "https://doi.org/10.1080/10556789808805690"
+  - type: article
+    title: "On the limited memory BFGS method for large scale optimization"
+    authors:
+      - family-names: "Liu"
+        given-names: "Dong C."
+      - family-names: "Nocedal"
+        given-names: "Jorge"
+    journal: "Mathematical Programming"
+    volume: "45"
+    issue: "1-3"
+    start: "503"
+    end: "528"
+    year: 1989
+    doi: "10.1007/BF01589116"
+    url: "https://doi.org/10.1007/BF01589116"
+  - type: article
+    title: "A Fast and Scalable Pathwise-Solver for Group Lasso and Elastic Net Penalized Regression via Block-Coordinate Descent"
+    authors:
+      - family-names: "Yang"
+        given-names: "James"
+      - family-names: "Hastie"
+        given-names: "Trevor"
+    year: 2024
+    doi: "10.48550/arXiv.2405.08631"
+    url: "https://arxiv.org/abs/2405.08631"
+  - type: conference-paper
+    title: "Adam: A Method for Stochastic Optimization"
+    authors:
+      - family-names: "Kingma"
+        given-names: "Diederik P."
+      - family-names: "Ba"
+        given-names: "Jimmy"
+    collection-title: "International Conference on Learning Representations"
+    year: 2015
+    url: "https://arxiv.org/abs/1412.6980"
+  - type: conference-paper
+    title: "Decoupled Weight Decay Regularization"
+    authors:
+      - family-names: "Loshchilov"
+        given-names: "Ilya"
+      - family-names: "Hutter"
+        given-names: "Frank"
+    collection-title: "International Conference on Learning Representations"
+    year: 2019
+    url: "https://openreview.net/forum?id=Bkg6RiCqY7"
+  - type: data
+    title: "Concrete Compressive Strength"
+    authors:
+      - family-names: "Yeh"
+        given-names: "I-Cheng"
+    year: 1998
+    doi: "10.24432/C5PK67"
+    url: "https://archive.ics.uci.edu/dataset/165/concrete+compressive+strength"
+    license: "CC-BY-4.0"
+  - type: data
+    title: "Wine Quality"
+    authors:
+      - family-names: "Cortez"
+        given-names: "Paulo"
+      - family-names: "Cerdeira"
+        given-names: "A."
+      - family-names: "Almeida"
+        given-names: "F."
+      - family-names: "Matos"
+        given-names: "T."
+      - family-names: "Reis"
+        given-names: "J."
+    year: 2009
+    doi: "10.24432/C56S3T"
+    url: "https://archive.ics.uci.edu/dataset/186/wine+quality"
+    license: "CC-BY-4.0"
+  - type: data
+    title: "scikit-learn california housing dataset cal_housing.tgz"
+    authors:
+      - family-names: "Liu"
+        given-names: "Nelson"
+    year: 2016
+    version: "2"
+    doi: "10.6084/m9.figshare.3829992.v2"
+    url: "https://figshare.com/articles/dataset/cal_housing_tgz/3829992"
+    license: "CC-BY-4.0"
+  - type: data
+    title: "Superconductivty Data"
+    authors:
+      - family-names: "Hamidieh"
+        given-names: "Kam"
+    year: 2018
+    doi: "10.24432/C53P47"
+    url: "https://archive.ics.uci.edu/dataset/464/superconductivty+data"
+    license: "CC-BY-4.0"
+  - type: article
+    title: "Sparse spatial autoregressions"
+    authors:
+      - family-names: "Pace"
+        given-names: "R. Kelley"
+      - family-names: "Barry"
+        given-names: "Ronald"
+    journal: "Statistics & Probability Letters"
+    volume: "33"
+    issue: "3"
+    start: "291"
+    end: "297"
+    year: 1997
+    doi: "10.1016/S0167-7152(96)00140-X"
+    url: "https://doi.org/10.1016/S0167-7152(96)00140-X"

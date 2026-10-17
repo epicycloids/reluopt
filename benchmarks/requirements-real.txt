@@ -1,0 +1,10 @@
+numpy==1.26.4
+scipy==1.13.1
+torch==2.10.0
+torchvision==0.25.0
+cvxpy==1.6.7
+pyscnn==0.0.10
+adelie==1.1.52
+linalg-backends==0.0.1b0
+pytest==9.1.1
+threadpoolctl==3.7.0

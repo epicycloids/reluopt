@@ -1,0 +1,46 @@
+[project]
+name = "reluopt"
+version = "0.6.0"
+description = "Convex two-layer ReLU regression by fully corrective atom selection"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Logan Bell" }]
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "scipy>=1.10",
+    "build>=1.2",
+    "twine>=5",
+    "threadpoolctl>=3",
+]
+compute = ["modal>=1.0", "threadpoolctl>=3"]
+performance = ["scipy>=1.10"]
+
+[project.urls]
+Repository = "https://github.com/epicycloids/reluopt"
+Documentation = "https://github.com/epicycloids/reluopt/blob/main/docs/method.md"
+
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["reluopt"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/reluopt",
+    "/tests",
+    "/examples",
+    "/benchmarks",
+    "/docs",
+    "/README.md",
+    "/CITATION.cff",
+    "/LICENSE",
+    "/pyproject.toml",
+    "/uv.lock",
+]
